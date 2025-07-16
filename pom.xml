@@ -92,6 +92,14 @@
 			<version>${spring.version}</version>
 		</dependency>
   </dependencies>
+  
+  <distributionManagement>
+       <repository>
+         <id>internal.repo</id>
+         <name>Internal repo</name>
+         <url>file:///E:\</url>
+       </repository>
+   </distributionManagement>
 
   <build>
     <plugins>
@@ -111,7 +119,6 @@
       </plugin>     
     </plugins>
   </build>
-
   <profiles>
     <profile>
       <id>sonar-coverage</id>
